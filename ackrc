@@ -1,0 +1,6 @@
+--ignore-dir=node_modules
+--ignore-dir=dist
+--ignore-dir=bower_components
+--type-set=coffee=.coffee
+--type-set=jade=.jade
+--type-set=json=.json

@@ -1,0 +1,23 @@
+[user]
+	name = Corey M.
+	email = corey.mac@gmail.com
+[push]
+	default = simple
+[core]
+	autocrlf = input
+	excludesfile = /Users/corey/.gitignore_global
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[alias]
+    co = checkout
+    br = branch
+    st = status
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/corey/.stCommitMsg
